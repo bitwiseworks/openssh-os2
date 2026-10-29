@@ -161,6 +161,7 @@ PATHSUBS	= \
 	-e 's|/etc/ssh/ssh_config|$(sysconfdir)/ssh_config|g' \
 	-e 's|/etc/ssh/ssh_known_hosts|$(sysconfdir)/ssh_known_hosts|g' \
 	-e 's|/etc/ssh/sshd_config|$(sysconfdir)/sshd_config|g' \
+	-e 's|/usr/libexec/sftp-server|$(SFTP_SERVER)$(EXEEXT)|g' \
 	-e 's|/usr/libexec|$(libexecdir)|g' \
 	-e 's|/etc/shosts.equiv|$(sysconfdir)/shosts.equiv|g' \
 	-e 's|/etc/ssh/ssh_host_key|$(sysconfdir)/ssh_host_key|g' \
